@@ -70,137 +70,17 @@
 
 <!-- start header -->
 
-    <div class="header" id="header">
-        <div class="container">
+<div class="header" id="header">
+    <div class="container">
 
-            <a class="logo" href="../../index.html">
-                FO<span>OD</span>
-            </a>
+        <a class="logo" href="index.html">
+            <span style="color: green;"> ابو رسلان
+            </span> <span style="color: green;">مؤسسة</span>
+        </a>
 
-            <ul class="main-nav">
-                <li>
-                    <a target="_blank" href="../../html/login/index.html">
-                        Login
-                    </a>
-                </li>
+       
 
-                <li>
-                    <a target="_blank" href="../../html/signup/index.html">
-                        Sign Up
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../../index.html">
-                        About US
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Other Links
-                    </a>
-
-                    <!-- start megamenu -->
-                    <div class="mega-menu">
-
-                        <div class="img">
-                            <img src="../../img/1-1/2.png" alt="">
-                        </div>
-
-                        <ul class="links">
-
-                            <li>
-                                <a href="../../html/fast-food/index.html">
-                                    <i class="fas fa-carrot"></i>
-                                    Fast Food
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/photos-of/index.html"">
-                                    <i class="fas fa-carrot"></i> 
-                                  خدمة الورود والنخيل والنباتات
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/gallery/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Gallery
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/best-eat/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Best Eat
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/chef/index.html">
-                                    <i class="fas fa-carrot"></i>
-                                    Chef
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/call-us/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Call US 
-                                </a>
-                            </li>
-
-                        </ul>
-
-                        <ul class="links">
-Title
-                            <li>
-                                <a href="../../html/bast-chefs/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Bast Chefs 
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/latest-ev/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Latest Events 
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/video-cook/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Videos Cooking
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/discount/index.html">
-                                    <i class="fas fa-carrot"></i>
-                                    Discount 
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/branc/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Branches
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="../../html/order/index.html">
-                                    <i class="fas fa-carrot"></i> 
-                                    Order
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
+    </div>
                     <!-- end megamenu -->
                 </li>
 
@@ -1062,23 +942,15 @@ Title
 
 <!-- end photos Of Meals -->
 
-<!-- Start Footer -->
+ <!-- Start Footer -->
 
-    <div class="footer">
+ <footer style="background-color: #020202; padding: 10px;">
+    <h1 style="color: beige; font-size: 15px; text-align: center;">
+        &copy;  جميع الحقوق محفوظه لصالح مؤسسة أبو رسلان 
+    </h1>
+   </footer>
 
-        <p class="copyright">
-
-            All Rights Are Save &lt; By 
-            
-            <a href="#header">
-                <span>FO</span><span>OD</span>
-            </a>
-
-        </p>
-
-    </div>
-
-<!-- End Footer -->
+    <!-- End Footer -->
 
 
 
@@ -1086,6 +958,103 @@ Title
 
 
 
+    <div class="floating-menu">
+        <div class="toggle-btn" onclick="toggleMenu()">
+<i style="font-size: 28px; color: #f4f4f4;" class="fa fa-comment"></i>
+        </div>
+        <div class="menu-items">
+          <a href="tel:+966590410939" class="menu-icon" title="اتصال">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="اتصال" />
+          </a>
+          <a href="https://+966590410939" target="_blank" class="menu-icon" title="واتساب">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="واتساب" />
+          </a>
+        </div>
+      </div>
+      
+      <style>
+        /* تعيين التنسيق الأساسي */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+        }
+      
+        /* تنسيق الزر العائم */
+        .floating-menu {
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          z-index: 999;
+        }
+      
+        .toggle-btn {
+          width: 60px;
+          height: 60px;
+          background-color: #25d366;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+      
+        .toggle-btn img {
+          width: 30px;
+          height: 30px;
+        }
+      
+        /* إعدادات الأيقونات التي ستظهر عند الضغط */
+        .menu-items {
+          display: none;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 10px;
+        }
+      
+        .menu-icon {
+          width: 60px;
+          height: 60px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease;
+        }
+      
+        .menu-icon img {
+          width: 30px;
+          height: 30px;
+        }
+      
+        .menu-items.show {
+          display: flex;
+        }
+      
+        /* تأثيرات على الأيقونات */
+        .toggle-btn:hover {
+          background-color: #128c7e;
+        }
+      
+        .menu-icon:hover {
+          transform: scale(1.1);
+        }
+      </style>
+      
+      <script>
+        function toggleMenu() {
+          const menu = document.querySelector('.menu-items');
+          menu.classList.toggle('show');
+        }
+      </script>
 
 
 

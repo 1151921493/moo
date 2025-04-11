@@ -64,132 +64,14 @@
 
     <div class="header" id="header">
         <div class="container">
-
+    
             <a class="logo" href="index.html">
                 <span style="color: green;"> ابو رسلان
                 </span> <span style="color: green;">مؤسسة</span>
             </a>
-
-            <ul class="main-nav">
-
-                <li>
-                    <a style="font-size: 17px;" href="html/call-us/index.html">
-
-                        تواصل معنا </a>
-                </li>
-
-
-
-                <li>
-                    <a style="font-size: 22px;" href="#about-us">
-                        الرئيسية
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <i style="font-size: 28px;" class="fa fa-bars"></i>
-
-                    </a>
-
-                    <!-- start megamenu -->
-
-                    <div style="text-align: right; font-size: 20px;background-color: #020202; color: #fff;" class="mega-menu">
-
-                        <div class="img">
-                            <img src="img/1-1/2.png" alt="">
-                        </div>
-
-                        <ul class="links">
-
-
-                            <li>
-                                <a href="html/video-cook/index.html">
-                                    معرض فديوهات اعمالنا
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="html/photos-of/index.html">
-                                    خدمة زراعة الورود والنخيل والاشجار
-                                </a>
-                            </li>
-                            <li>
-                                <a href="html/gallery/index.html">
-                                    خدمة الاسمده والمبيدات والتربة الزراعية
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="html/1/pro1.html">
-
-                                    خدمة التيل الطبيعي </a>
-                            </li>
-                            <li>
-                                <a href="html/2/index 2.html">
-
-                                    خدمة التيل الصناعي </a>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="html/3/index 3.html">
-
-                                    خدمة تصميم وتركيب عشب جداري
-                            </li>
-                            </a>
-                </li>
-              
-
-
-
-                <li>
-                    <a href="html/chef/index.html">
-                        خدمة تصميم وتركيب شلالات </a>
-                </li>
-
-
-
-            </ul>
-
-            <ul class="links">
-
-
-
-                <li>
-                    <a href="html/latest-ev/index.html">
-                        خدمة تركيب الملاعب وصيانتها
-                    </a>
-                </li>
-
-
-
-                <li>
-                    <a href="html/discount/index.html">
-
-                        خدمة شبكات الري
-                    </a>
-                </li>
-
-
-                <li>
-                    <a target="_blank" href="html/login/index.html">
-                        خدمة تركيب مظلات وسواتر وبرجولات
-                    </a>
-                </li>
-                <li>
-                    <a href="html/order/index.html">
-
-                        خدمة الديكورات الزراعية
-                    </a>
-                </li>
-                <li>
-                    <a href="html/call-us/index.html">
-                        تواصل معنا
-                    </a>
-                </li>
-
-            </ul>
-
+    
+           
+    
         </div>
 
                     <!-- end megamenu -->
@@ -434,28 +316,116 @@
 
     <!-- Start Footer -->
 
-    <div class="footer">
-
-        <p class="copyright">
-
-            All Rights Are Save &lt; By
-
-            <a href="#header">
-                <span>FO</span><span>OD</span>
-            </a>
-
-        </p>
-
-    </div>
-
-    <!-- End Footer -->
+    <footer style="background-color: #020202; padding: 10px;">
+        <h1 style="color: beige; font-size: 15px; text-align: center;">
+            &copy;  جميع الحقوق محفوظه لصالح مؤسسة أبو رسلان 
+        </h1>
+       </footer>
+    
+        <!-- End Footer -->
+    
 
 
 
 
 
-
-
+        <div class="floating-menu">
+            <div class="toggle-btn" onclick="toggleMenu()">
+    <i style="font-size: 28px; color: #f4f4f4;" class="fa fa-comment"></i>
+            </div>
+            <div class="menu-items">
+              <a href="tel:+966590410939" class="menu-icon" title="اتصال">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="اتصال" />
+              </a>
+              <a href="https://+966590410939" target="_blank" class="menu-icon" title="واتساب">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="واتساب" />
+              </a>
+            </div>
+          </div>
+          
+          <style>
+            /* تعيين التنسيق الأساسي */
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+          
+            body {
+              font-family: Arial, sans-serif;
+              background-color: #f4f4f4;
+            }
+          
+            /* تنسيق الزر العائم */
+            .floating-menu {
+              position: fixed;
+              bottom: 20px;
+              left: 20px;
+              z-index: 999;
+            }
+          
+            .toggle-btn {
+              width: 60px;
+              height: 60px;
+              background-color: #25d366;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+          
+            .toggle-btn img {
+              width: 30px;
+              height: 30px;
+            }
+          
+            /* إعدادات الأيقونات التي ستظهر عند الضغط */
+            .menu-items {
+              display: none;
+              flex-direction: column;
+              gap: 10px;
+              margin-top: 10px;
+            }
+          
+            .menu-icon {
+              width: 60px;
+              height: 60px;
+              background-color: #fff;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease;
+            }
+          
+            .menu-icon img {
+              width: 30px;
+              height: 30px;
+            }
+          
+            .menu-items.show {
+              display: flex;
+            }
+          
+            /* تأثيرات على الأيقونات */
+            .toggle-btn:hover {
+              background-color: #128c7e;
+            }
+          
+            .menu-icon:hover {
+              transform: scale(1.1);
+            }
+          </style>
+          
+          <script>
+            function toggleMenu() {
+              const menu = document.querySelector('.menu-items');
+              menu.classList.toggle('show');
+            }
+          </script>
 
 
 
