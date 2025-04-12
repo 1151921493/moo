@@ -1835,6 +1835,7 @@ body {
 .videos {
     padding-top: var(--ma-padding-top);
     padding-bottom: var(--ma-padding-bot);
+    width: 300px; 
 }
 
 .videos .holder {
@@ -1901,10 +1902,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .videos .holder .preview img {
     max-width: 100%;
+   
 }
 
 .videos .holder .preview .info {
