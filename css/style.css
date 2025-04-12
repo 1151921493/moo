@@ -11,10 +11,53 @@
     src: url("../font/cairo/Cairo-Bold.ttf");
     /* src: url("../font/cairo/Cairo-SemiBold.ttf"); */
 }
+.contact-widget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
 
+  .main-toggle {
+    background-color: #25D366;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .contact-actions {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contact-btn {
+    background: white;
+    border-radius: 50%;
+    padding: 12px;
+    color: #333;
+    font-size: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .contact-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .fa-whatsapp { color: #25D366;  font-size: 30px;}
+  .fa-phone { color: #115fb3;
+font-size: 30px; }
 body {
     font-family: "Cairo", sans-serif;
     /* height: 55550px; */
+    background-color: #009688;
 
 }
 
@@ -226,9 +269,7 @@ body {
 /* end */
 
 /* start header */
-.box .content {
-   
-}
+
 .header {
     background-color: #fff;
     box-shadow: 0 0 10px #ddd;
