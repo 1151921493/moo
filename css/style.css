@@ -1835,7 +1835,8 @@ body {
 .videos {
     padding-top: var(--ma-padding-top);
     padding-bottom: var(--ma-padding-bot);
-    width: 300px; 
+    width: 360px; 
+   
 }
 
 .videos .holder {
