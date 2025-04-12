@@ -226,6 +226,9 @@ body {
 /* end */
 
 /* start header */
+.box .content {
+   
+}
 .header {
     background-color: #fff;
     box-shadow: 0 0 10px #ddd;
