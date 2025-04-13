@@ -11,6 +11,7 @@
     src: url("../font/cairo/Cairo-Bold.ttf");
     /* src: url("../font/cairo/Cairo-SemiBold.ttf"); */
 }
+
 .contact-widget {
     position: fixed;
     bottom: 20px;
@@ -57,7 +58,7 @@ font-size: 30px; }
 body {
     font-family: "Cairo", sans-serif;
     /* height: 55550px; */
-    background-color: #062709;
+    background-color: #3f412d;
 
 }
 
