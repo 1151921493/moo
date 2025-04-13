@@ -57,7 +57,7 @@ font-size: 30px; }
 body {
     font-family: "Cairo", sans-serif;
     /* height: 55550px; */
-    background-color: #009688;
+    background-color: #062709;
 
 }
 
@@ -274,7 +274,7 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px #ddd;
     position: relative;
-    /* z-index: 2; */
+
 }
 
 .header .container {
