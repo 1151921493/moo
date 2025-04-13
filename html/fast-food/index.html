@@ -338,84 +338,93 @@
 
     <!-- End Footer -->
     <!-- ✅ ربط مكتبة Font Awesome (النسخة المجانية) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- ✅ عنصر التواصل العائم -->
-<div class="contact-widget">
-  <!-- الزر الرئيسي -->
-  <button class="main-toggle" id="mainToggleBtn" title="تواصل معنا">
-    <i class="fa fa-comments"></i>
-  </button>
+    <!-- ✅ عنصر التواصل العائم -->
+    <div class="contact-widget">
+        <!-- الزر الرئيسي -->
+        <button class="main-toggle" id="mainToggleBtn" title="تواصل معنا">
+            <i class="fa fa-comments"></i>
+        </button>
 
-  <!-- الأزرار الجانبية -->
-  <div class="contact-actions" id="contactActions">
-    <!-- واتساب -->
-    <a href="https://wa.me/966590410939" target="_blank" class="contact-btn" title="واتساب">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
+        <!-- الأزرار الجانبية -->
+        <div class="contact-actions" id="contactActions">
+            <!-- واتساب -->
+            <a href="https://wa.me/966590410939" target="_blank" class="contact-btn" title="واتساب">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-    <!-- اتصال -->
-    <a href="tel:966590410939" class="contact-btn" title="اتصال">
-      <i class="fa fa-phone"></i>
-    </a>
-  </div>
-</div>
+            <!-- اتصال -->
+            <a href="tel:966590410939" class="contact-btn" title="اتصال">
+                <i class="fa fa-phone"></i>
+            </a>
+        </div>
+    </div>
 
-<!-- ✅ تنسيقات CSS -->
-<style>
-  .contact-widget {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
-  }
+    <!-- ✅ تنسيقات CSS -->
+    <style>
+        .contact-widget {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
 
-  .main-toggle {
-    background-color: #25D366;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
+        .main-toggle {
+            background-color: #053f09;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            color: rgb(246, 255, 241);
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
 
-  .contact-actions {
-    display: none;
-    flex-direction: column;
-    margin-top: 10px;
-    gap: 10px;
-    align-items: center;
-  }
+        .contact-actions {
+            display: none;
+            flex-direction: column;
+            margin-top: 10px;
+            gap: 10px;
+            align-items: center;
+        }
 
-  .contact-btn {
-    background: white;
-    border-radius: 50%;
-    padding: 12px;
-    color: #333;
-    font-size: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
-  }
+        .contact-btn {
+            background: white;
+            border-radius: 50%;
+            padding: 12px;
+            color: #333;
+            font-size: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
 
-  .contact-btn:hover {
-    transform: scale(1.1);
-  }
+        .contact-btn:hover {
+            transform: scale(1.1);
+        }
 
-  .fa-whatsapp { color: #25D366; }
-  .fa-phone { color: #007bff; }
-</style>
+        .fa-whatsapp {
+            color: #086d2d;
+            font-size: 40px;
+        }
 
-<!-- ✅ JavaScript -->
-<script>
-  const toggleBtn = document.getElementById("mainToggleBtn");
-  const contactActions = document.getElementById("contactActions");
+        .fa-phone {
+            color: #007bff;
+            font-size: 40px;
+        }
+    </style>
 
-  toggleBtn.addEventListener("click", () => {
-    contactActions.style.display = contactActions.style.display === "flex" ? "none" : "flex";
-  });
-</script>
+    <!-- ✅ JavaScript -->
+    <script>
+        const toggleBtn = document.getElementById("mainToggleBtn");
+        const contactActions = document.getElementById("contactActions");
+
+        toggleBtn.addEventListener("click", () => {
+            contactActions.style.display = contactActions.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
+
+
 </body>
 
 </html>
