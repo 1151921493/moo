@@ -277,6 +277,12 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px #ddd;
     position: relative;
+   
+   
+   
+   
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل خفيف */
+
 
 }
 
@@ -286,8 +292,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-   
 
+   
 }
 
 .header .container .logo {
