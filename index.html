@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+   
 
 
     <!-- logo to web site -->
@@ -27,6 +28,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reyset.css" />
     <link rel="stylesheet" href="css/style.css" />
+   
 
 
 
@@ -141,7 +143,7 @@
     
     مستلزمات الري بالتنقيط بالرياض
     
-    أعمال تنسيق حدائق استراحات بالرياض>مؤسسة ابو رسلان  لتنسيق الحدائق بالرياض</title>
+    أعمال تنسيق حدائق استراحات بالرياض>      ​Royal Garden – رويال تنسيق حدائق <h1>مؤسسة ابو رسلان 590410939</h1></title>
 
 </head>
 
@@ -955,7 +957,8 @@
             <div style="background: linear-gradient(to bottom right,rgb(255, 255, 255), #ffffff); /* خلفية متدرجة ناعمة */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgb(3, 218, 3); /* ظل خفيف */" class="box">
+            box-shadow: 0 2px 8px rgb(3, 218, 3);position: relative;
+ " class="box">
 
                 <img src="img/5.webp" alt="" />
 
@@ -1220,7 +1223,18 @@
 
 
 
+    <script src="styile.js">
+        window.addEventListener('scroll', function () {
+    const images = document.querySelectorAll('.parallax-image');
+    const scrollY = window.scrollY;
 
+    images.forEach((img, index) => {
+      // كل صورة تتحرك بسرعة مختلفة
+      const speed = (index + 1) * 0.3; // غيّر الرقم حسب التأثير المطلوب
+      img.style.transform = translateY(${scrollY * speed}px);
+    });
+  });
+    </script>
 
 </body>
 
