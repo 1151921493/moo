@@ -10,6 +10,9 @@
     src: url("../font/cairo/Cairo-Bold.ttf");
     /* src: url("../font/cairo/Cairo-SemiBold.ttf"); */
 }
+*{
+    box-sizing:border-box;
+}
 
 .contact-widget {
     position: fixed;
